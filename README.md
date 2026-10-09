@@ -1,7 +1,6 @@
 # Student Performance Analyzer
 
 This is a Python project I created to practice NumPy. The program analyzes students' marks in different subjects and calculates useful statistics such as averages, highest and lowest marks, and standard deviation.
-
 I built this project to improve my understanding of NumPy arrays, mathematical operations, and data analysis.
 
 ## Features
@@ -18,54 +17,15 @@ I built this project to improve my understanding of NumPy arrays, mathematical o
 * Calculate weighted scores and rank students.
 
 ## Technologies Used
-
 * Python
 * NumPy
-
 ## Project Structure
-
 ```text
 student-performance-analyzer/
 ├── main.py
 ├── README.md
 └── requirements.txt
 ```
-
-## Installation and Usage
-
-**1. Clone the repository**
-
-```bash
-git clone https://github.com/Raza-07re/student-perfomance-analyzer.git
-```
-
-Replace `YOUR-USERNAME` with your GitHub username.
-
-**2. Open the project folder**
-
-```bash
-cd student-performance-analyzer
-```
-
-**3. Create a virtual environment**
-
-```bash
-python3 -m venv .venv
-source .venv/bin/activate
-```
-
-**4. Install NumPy**
-
-```bash
-python -m pip install -r requirements.txt
-```
-
-**5. Run the program**
-
-```bash
-python main.py
-```
-
 ## What I Practiced
 
 While building this project, I practiced:
