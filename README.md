@@ -1,48 +1,53 @@
 # Student Performance Analyzer
 
-This is a Python project I created to practice NumPy. The program analyzes students' marks in different subjects and calculates useful statistics such as averages, highest and lowest marks, and standard deviation.
-I built this project to improve my understanding of NumPy arrays, mathematical operations, and data analysis.
+A Python and NumPy project for exploring marks data using array operations and statistics.
 
 ## Features
 
-* Calculate the overall class average.
-* Find each student's average marks.
-* Calculate subject-wise averages.
-* Find the highest and lowest marks.
-* Calculate median, variance, and standard deviation.
-* Find marks above 90 and failing marks below 60.
-* Identify students performing above the class average.
-* Normalize marks between 0 and 1.
-* Calculate correlations between subjects.
-* Calculate weighted scores and rank students.
+- Class-wide average, median, variance, and standard deviation
+- Student and subject averages
+- Highest and lowest mark details
+- Filter marks above 90 and below 60
+- Normalize marks to a 0–1 range
+- Compare subject correlations while handling undefined correlations
+- Calculate weighted scores and rank students
+- Load student records from a CSV file
 
-## Technologies Used
-* Python
-* NumPy
-## Project Structure
-```text
-student-performance-analyzer/
-├── main.py
-├── README.md
-└── requirements.txt
+## Requirements
+
+- Python 3.10+
+- NumPy
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements.txt
 ```
-## What I Practiced
 
-While building this project, I practiced:
+## Run with the built-in sample
 
-* Creating and accessing NumPy arrays.
-* Using array indexing and slicing.
-* Performing statistical calculations.
-* Filtering data with Boolean indexing.
-* Working with normalization and correlation.
-* Performing matrix multiplication.
-* Sorting data and ranking students.
-* Organizing code using functions.
+```bash
+python main.py
+```
 
-## Future Improvements
+## Analyze your own CSV
 
-I would like to improve this project by adding the ability to enter marks manually, read data from a CSV file, and display results using charts.
+CSV columns must be named exactly `student,Math,Physics,Computer,English,Statistics`.
 
-## Note
+```bash
+python main.py --csv sample_marks.csv
+```
 
-This project uses sample marks for practice and learning purposes.
+You can replace `sample_marks.csv` with your own file path. Marks must be numbers from 0 to 100. The subject weights used for ranking are Math 25%, Physics 20%, Computer 30%, English 10%, and Statistics 15%.
+
+## Project structure
+
+```text
+student-perfomance-analyzer/
+├── main.py
+├── sample_marks.csv
+├── requirements.txt
+└── README.md
+```
+
+This project uses sample data for learning; it is not intended to make high-stakes decisions about students.
